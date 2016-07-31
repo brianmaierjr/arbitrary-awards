@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 100%;
+}
+body {
+  background: lighten(black, 15%);
+  font: 300 1em/1.6 'Playfair Display', Georgia, Times, serif;
+  color: darken(white, 5%);
+  text-align: center;
+  position: relative;
+  margin: 2em;
+  border: 12px solid gold;
+}
+
+body,html{
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+
+#award-text {
+    font-size: 5vw;
+}
