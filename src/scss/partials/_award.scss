@@ -1,31 +1,67 @@
 .randomAward {
   text-transform: capitalize;
   font-family: $serif;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1.2em;
-  margin-top: .2em;
+  margin-top: 0;
+  color: white;
+  position: relative;
+  margin-bottom: 5rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    width: 100px;
+    height: 2px;
+    background: $tan;
+    display: block;
+    margin-left: -50px;
+  }
 
   @include bp(sm) { font-size: 2em; }
-  @include bp(med) { font-size: 3em; }
 }
 
 .awardRecipient {
-  padding-top: 3em;
+  margin-top: 3em;
   font-size: 1em;
+  position: relative;
+  margin-bottom: 0;
 
-  @include bp(sm) { font-size: .8em; }
+    &:before {
+      content: "";
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      width: 100px;
+      height: 2px;
+      background: $tan;
+      display: block;
+      margin-left: -50px;
+    }
+
+   @include bp(sm) { font-size: .8em; }
 }
 
 .main {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 
   .button {
     width: auto;
-    margin: 0 0 .5em;
+    margin: 0 .25em;
 
-    @include bp(sm) { width: 100%; }
+    @include bp(sm) {
+      width: 100%;
+      margin: 0 0 .5em;
+    }
   }
+}
+
+.awardTrigger svg { transition: .5s all ease-in-out; }
+.awardTrigger:hover svg {
+  transform: rotate(360deg);
 }
 
 .printTrigger {
@@ -36,17 +72,20 @@
 }
 
 .nameTrigger {
-  border-bottom: 2px solid lighten($black, 20%);
+  background: lighten($black, 20%);
   display: block;
   display: inline-block;
   width: auto;
   font-weight: bold;
   margin: .5em 0;
+  padding: 0 .25em;
 
   @include bp(sm) { width: 100%; }
 
   input {
     background: lighten($black, 20%);
+    outline: none;
+    border: none;
   }
 }
 

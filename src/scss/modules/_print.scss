@@ -50,8 +50,19 @@
   }
 
   .awardTrigger,
-  .printTrigger {
+  .printTrigger,
+  .shareTrigger {
     display: none;
+  }
+
+  .randomAward {
+    font-size: 5em;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .nameTrigger {
+    width: auto;
   }
 
 }

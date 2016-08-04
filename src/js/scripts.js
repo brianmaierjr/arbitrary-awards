@@ -46,15 +46,30 @@
     'Most erotic cryer',
     'Best charades demonstration of Seal’s Kiss From a Rose',
     'Most influential golfer from Louisiana',
-    'Most sexually indecisive polygamist'
+    'Most sexually indecisive polygamist',
+    'Ugliest selfie face',
+    'longest fart inside an enclosed car',
+    'recipient of the most arbitrary award',
+    'greasiest hands post waffle house',
+    'hairiest eyebrows in your family',
+    'worst dental hygiene habits of your immediate family',
+    'best instagram comment on a photo with more than 100 likes',
+    'steamiest imaginary shower scene',
+    'grandest powerpoint presentation on how to use powerpoint',
+    'most likely to vote for donald trump',
+    'funniest avatar on your work IM client',
+    'longest running joke about the Kardashians',
+    'biggest complainer about back pain due to sexual activity'
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
   $('.awardTrigger').click(function(){
     $('.randomAward').text(quotes[Math.floor( Math.random() * quotes.length )]);
+    return false;
   });
   $('.printTrigger').click(function(){
     window.print();
+    return false;
   });
   $('.tweet').click(function(){
     $('.tweet a').attr('href','https://twitter.com/intent/tweet?text='+encodeURIComponent(rand));
@@ -63,6 +78,7 @@
   // jQuery.editable
   $('.nameTrigger').editable('click', function(e){
     alert(e.value);
+    return false;
   });
 
 })(jQuery, window, document);

@@ -1,5 +1,36 @@
-.copy {
+.footer {
   font-size: .8em;
+
+  @include bp(sm) {
+    text-align: center;
+  }
+}
+
+.shareTrigger {
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: lighten($black, 20%);
+  }
+
+  @include bp(med) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  svg {
+    vertical-align: middle;
+    fill: $tan;
+  }
+}
+
+.copy {
   padding: .2em;
   margin: 2em 0 0;;
   position: absolute;

@@ -394,10 +394,23 @@ html {
 body {
   background: #23202B;
   font: 400 1em/1.6 "Work Sans", sans-serif;
-  color: #f2f2f2;
+  color: #bfbfbf;
   text-align: center;
   position: relative;
-  padding: 80px; }
+  padding: 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  body .header,
+  body .main,
+  body .footer {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%; }
   body:before {
     height: calc(100% - 80px);
     width: calc(100% - 80px);
@@ -440,19 +453,32 @@ a {
   letter-spacing: 2px;
   position: relative;
   margin-top: 0; }
-  .header h1:before {
-    content: "";
-    position: absolute;
-    top: calc(100% + 1em);
-    left: 50%;
-    width: 50px;
-    height: 2px;
-    background: white;
-    display: block;
-    margin-left: -25px; }
+
+.footer {
+  font-size: .8em; }
+  @media (max-width: 600px) {
+    .footer {
+      text-align: center; } }
+
+.shareTrigger {
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  text-decoration: none; }
+  .shareTrigger:hover {
+    cursor: pointer;
+    color: #534c65; }
+  @media (max-width: 1024px) {
+    .shareTrigger {
+      position: relative;
+      top: 0;
+      left: 0; } }
+  .shareTrigger svg {
+    vertical-align: middle;
+    fill: #C9C6A9; }
 
 .copy {
-  font-size: .8em;
   padding: .2em;
   margin: 2em 0 0;
   position: absolute;
@@ -467,32 +493,63 @@ a {
 .randomAward {
   text-transform: capitalize;
   font-family: "Playfair Display", serif;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1.2em;
-  margin-top: .2em; }
+  margin-top: 0;
+  color: white;
+  position: relative;
+  margin-bottom: 5rem; }
+  .randomAward:before {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    width: 100px;
+    height: 2px;
+    background: #C9C6A9;
+    display: block;
+    margin-left: -50px; }
   @media (max-width: 600px) {
     .randomAward {
       font-size: 2em; } }
-  @media (max-width: 1024px) {
-    .randomAward {
-      font-size: 3em; } }
 
 .awardRecipient {
-  padding-top: 3em;
-  font-size: 1em; }
+  margin-top: 3em;
+  font-size: 1em;
+  position: relative;
+  margin-bottom: 0; }
+  .awardRecipient:before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    width: 100px;
+    height: 2px;
+    background: #C9C6A9;
+    display: block;
+    margin-left: -50px; }
   @media (max-width: 600px) {
     .awardRecipient {
       font-size: .8em; } }
 
 .main {
-  width: 100%;
+  width: 80%;
   margin: 0 auto; }
   .main .button {
     width: auto;
-    margin: 0 0 .5em; }
+    margin: 0 .25em; }
     @media (max-width: 600px) {
       .main .button {
-        width: 100%; } }
+        width: 100%;
+        margin: 0 0 .5em; } }
+
+.awardTrigger svg {
+  transition: .5s all ease-in-out; }
+
+.awardTrigger:hover svg {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg); }
 
 .printTrigger {
   border-color: #534c65;
@@ -501,17 +558,20 @@ a {
     fill: #534c65; }
 
 .nameTrigger {
-  border-bottom: 2px solid #534c65;
+  background: #534c65;
   display: block;
   display: inline-block;
   width: auto;
   font-weight: bold;
-  margin: .5em 0; }
+  margin: .5em 0;
+  padding: 0 .25em; }
   @media (max-width: 600px) {
     .nameTrigger {
       width: 100%; } }
   .nameTrigger input {
-    background: #534c65; }
+    background: #534c65;
+    outline: none;
+    border: none; }
 
 ::-moz-selection {
   background: #333;
@@ -572,5 +632,12 @@ a {
   h3 {
     page-break-after: avoid; }
   .awardTrigger,
-  .printTrigger {
-    display: none; } }
+  .printTrigger,
+  .shareTrigger {
+    display: none; }
+  .randomAward {
+    font-size: 5em;
+    width: 80%;
+    margin: 0 auto; }
+  .nameTrigger {
+    width: auto; } }
