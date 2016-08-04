@@ -62,7 +62,25 @@
     'biggest complainer about back pain due to sexual activity',
     'most likely to be mauled by a dog in heat',
     'Dankest Meme Maker in the Continental U.S.',
-    'Most grounded cornhole player'
+    'Most grounded cornhole player',
+    'Best usage of the words high-falutin in a casual conversation about pickles',
+    'Kindest bounty hunter',
+    'Most face tattoos while holding down a full time corporate job',
+    'Best air guitar performance to a song that has no actual guitar in it',
+    'Loudest audience member at a high school field hockey game',
+    'Grandest entrance into a golden corral while drunk',
+    'Best darth vader impression into the back of a fan',
+    'Most bedazzled horse saddle east of the mississippi river',
+    'Most painful yoda impression at a starbucks',
+    'Frothiest cappuccino maker while high on life',
+    'Grumpiest grandparent of an ugly duckling',
+    'Shortest travel time to the nearest bathroom',
+    'Most efficient use of toilet paper while going #2',
+    'Creepiest stare while at a urinal',
+    'Best gluten free side dish at a non gluten free potluck',
+    'Least arousing spotify playlist',
+    'Best comeback based on the Novel Push by sapphire',
+    'Most disingenuous public cryer'
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
