@@ -80,7 +80,12 @@
     'Best gluten free side dish at a non gluten free potluck',
     'Least arousing spotify playlist',
     'Best comeback based on the Novel Push by sapphire',
-    'Most disingenuous public cryer'
+    'Most disingenuous public cryer',
+    'Worst lemon meringue pie recipe',
+    'Most gripping use of IMHO',
+    'Most aggressive softball player in a work league',
+    'Strangest use of a fedora while underwater',
+    'Most tempting use of asparagus in a dessert',
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
@@ -98,7 +103,6 @@
 
   // jQuery.editable
   $('.nameTrigger').editable('click', function(e){
-    alert(e.value);
     return false;
   });
 
@@ -116,15 +120,15 @@
 
     window.open(
       url,
-      "",
-      "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+      '',
+      'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=' + width + ',height=' + height + ',top=' + top + ',left=' + left
     );
   }
 
-  $(".js-social-share").on("click", function(e) {
+  $('.js-social-share').on('click', function(e) {
     e.preventDefault();
 
-    windowPopup($(this).attr("href"), 500, 300);
+    windowPopup($(this).attr('href'), 500, 300);
   });
 
 
