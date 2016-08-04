@@ -21,11 +21,10 @@
   var entry = data.feed.entry;
 
   $(entry).each(function(){
-    $('#award-text').prepend('<h2>'+this.gsx$award.$t+'</h2>');
+    $('#award-text').prepend('<p>'+this.gsx$award.$t+'</p>');
   });
 
  });
-
 })(jQuery, window, document);
 
 
