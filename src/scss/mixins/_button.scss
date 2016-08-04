@@ -1,12 +1,28 @@
 @mixin button() {
-    display: inline-block;
-    border-radius: 3px;
-    color: white;
-    background: gold;
-    text-decoration: none;
-    padding: 1em 2em;
+  display: inline-block;
+  color: $tan;
+  background: transparent;
+  border: 1px solid $tan;
+  text-decoration: none;
+  padding: 1em 2em;
+  margin: 0 .5em;
+
+  svg {
+    vertical-align: middle;
+    fill: $tan;
+  }
+
+  &:hover {
+    background: darken($tan, 20%);
+    cursor: pointer;
+    color: $black;
+    border-color: darken($tan, 20%);
+
+    svg { fill: white; }
+  }
 }
 
 .button {
-    @include button();
+  @include button();
+  color: $tan;
 }

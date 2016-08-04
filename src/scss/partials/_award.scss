@@ -1,0 +1,31 @@
+.randomAward {
+  text-transform: capitalize;
+  font-family: $serif;
+  font-size: 5em;
+  line-height: 1.2em;
+  margin-top: .2em;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  left: 50%;
+}
+
+.printTrigger {
+  border-color: lighten($black, 20%);
+  color: lighten($black, 20%);
+
+  svg { fill: lighten($black, 20%); }
+}
+
+.nameTrigger {
+  border-bottom: 2px solid lighten($black, 20%);
+
+  input {
+    background: lighten($black, 20%);
+  }
+}
+

@@ -7,13 +7,24 @@ html {
   font-size: 100%;
 }
 body {
-  background: lighten(black, 15%);
-  font: 300 1em/1.6 'Playfair Display', Georgia, Times, serif;
+  background: $black;
+  font: 400 1em/1.6 $sans-serif;
   color: darken(white, 5%);
   text-align: center;
   position: relative;
-  margin: 2em;
-  border: 12px solid gold;
+  padding: 80px;
+
+  &:before {
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
+    border: 1px solid $tan;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    left: 40px;
+  }
 }
 
 body,html{
@@ -21,7 +32,11 @@ body,html{
 	overflow-x: hidden;
 }
 
+a {
+ color: $pink;
 
-#award-text {
-    font-size: 5vw;
+  &:hover {
+    color: darken($pink, 20%);
+  }
 }
+
