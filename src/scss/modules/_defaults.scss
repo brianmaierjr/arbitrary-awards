@@ -53,10 +53,10 @@ body,html{
 }
 
 a {
- color: $pink;
+ color: $tan;
 
   &:hover {
-    color: darken($pink, 20%);
+    color: darken($tan, 20%);
   }
 }
 
