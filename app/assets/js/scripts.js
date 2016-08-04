@@ -67,7 +67,11 @@
     'most likely to vote for donald trump',
     'funniest avatar on your work IM client',
     'longest running joke about the Kardashians',
-    'biggest complainer about back pain due to sexual activity'
+    'biggest complainer about back pain due to sexual activity',
+    'most likely to be mauled by a dog in heat',
+    'Dankest Meme Maker in the Continental U.S.',
+    'Most grounded cornhole player',
+    'Strongest body odor in a YMCA locker room'
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
