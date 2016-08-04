@@ -8,41 +8,6 @@
   .clear:after {
     clear: both; }
 
-* {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-html {
-  font-size: 100%; }
-
-body {
-  background: #23202B;
-  font: 400 1em/1.6 "Work Sans", sans-serif;
-  color: #f2f2f2;
-  text-align: center;
-  position: relative;
-  padding: 80px; }
-  body:before {
-    height: calc(100% - 80px);
-    width: calc(100% - 80px);
-    border: 1px solid #C9C6A9;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 40px;
-    z-index: -1;
-    left: 40px; }
-
-body, html {
-  min-height: 100vh;
-  overflow-x: hidden; }
-
-a {
-  color: #E86A71; }
-  a:hover {
-    color: #cc2029; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -404,7 +369,7 @@ th {
   background: transparent;
   border: 1px solid #C9C6A9;
   text-decoration: none;
-  padding: 1em 2em;
+  padding: .5em 1em;
   margin: 0 .5em;
   color: #C9C6A9; }
   .button svg {
@@ -418,8 +383,53 @@ th {
     .button:hover svg {
       fill: white; }
 
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+html {
+  font-size: 100%; }
+
+body {
+  background: #23202B;
+  font: 400 1em/1.6 "Work Sans", sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+  position: relative;
+  padding: 80px; }
+  body:before {
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
+    border: 1px solid #C9C6A9;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    left: 40px; }
+  @media (max-width: 600px) {
+    body {
+      padding: 40px; }
+      body:before {
+        height: calc(100% - 40px);
+        width: calc(100% - 40px);
+        top: 20px;
+        left: 20px; } }
+
+body, html {
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+a {
+  color: #E86A71; }
+  a:hover {
+    color: #cc2029; }
+
 .header svg {
-  fill: #534c65; }
+  fill: #534c65;
+  width: 20px;
+  height: 20px; }
 
 .header h1 {
   font-family: "Work Sans", sans-serif;
@@ -428,7 +438,8 @@ th {
   font-weight: 400;
   color: #C9C6A9;
   letter-spacing: 2px;
-  position: relative; }
+  position: relative;
+  margin-top: 0; }
   .header h1:before {
     content: "";
     position: absolute;
@@ -441,12 +452,17 @@ th {
     margin-left: -25px; }
 
 .copy {
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
   font-size: .8em;
   padding: .2em;
-  margin: 0; }
+  margin: 2em 0 0;
+  position: absolute;
+  bottom: 60px;
+  right: 60px; }
+  @media (max-width: 1024px) {
+    .copy {
+      position: relative;
+      top: 0;
+      left: 0; } }
 
 .randomAward {
   text-transform: capitalize;
@@ -454,15 +470,29 @@ th {
   font-size: 5em;
   line-height: 1.2em;
   margin-top: .2em; }
+  @media (max-width: 600px) {
+    .randomAward {
+      font-size: 2em; } }
+  @media (max-width: 1024px) {
+    .randomAward {
+      font-size: 3em; } }
+
+.awardRecipient {
+  padding-top: 3em;
+  font-size: 1em; }
+  @media (max-width: 600px) {
+    .awardRecipient {
+      font-size: .8em; } }
 
 .main {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 80%;
-  left: 50%; }
+  width: 100%;
+  margin: 0 auto; }
+  .main .button {
+    width: auto;
+    margin: 0 0 .5em; }
+    @media (max-width: 600px) {
+      .main .button {
+        width: 100%; } }
 
 .printTrigger {
   border-color: #534c65;
@@ -471,7 +501,15 @@ th {
     fill: #534c65; }
 
 .nameTrigger {
-  border-bottom: 2px solid #534c65; }
+  border-bottom: 2px solid #534c65;
+  display: block;
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  margin: .5em 0; }
+  @media (max-width: 600px) {
+    .nameTrigger {
+      width: 100%; } }
   .nameTrigger input {
     background: #534c65; }
 

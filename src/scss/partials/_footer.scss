@@ -1,8 +1,14 @@
 .copy {
+  font-size: .8em;
+  padding: .2em;
+  margin: 2em 0 0;;
   position: absolute;
   bottom: 60px;
   right: 60px;
-  font-size: .8em;
-  padding: .2em;
-  margin: 0;
+
+  @include bp(med) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }

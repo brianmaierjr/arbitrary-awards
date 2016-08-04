@@ -2,6 +2,8 @@
 
   svg {
     fill: lighten($black, 20%);
+    width: 20px;
+    height: 20px;
   }
 
   h1 {
@@ -12,6 +14,7 @@
     color: $tan;
     letter-spacing: 2px;
     position: relative;
+    margin-top: 0;
 
     &:before {
       content: "";

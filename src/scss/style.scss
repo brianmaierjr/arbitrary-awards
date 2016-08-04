@@ -7,7 +7,6 @@
 // Config modules
 @import 'modules/_vars.scss';
 @import 'modules/_clearfix.scss';
-@import 'modules/_defaults.scss';
 @import 'modules/_normalize.scss';
 
 //----------------------------------*\
@@ -15,10 +14,13 @@
 //----------------------------------*/
 
 @import 'mixins/_button.scss';
+@import 'mixins/_breakpoints.scss';
+
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
 
+@import 'modules/_defaults.scss';
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_footer.scss';

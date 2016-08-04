@@ -4,14 +4,28 @@
   font-size: 5em;
   line-height: 1.2em;
   margin-top: .2em;
+
+  @include bp(sm) { font-size: 2em; }
+  @include bp(med) { font-size: 3em; }
+}
+
+.awardRecipient {
+  padding-top: 3em;
+  font-size: 1em;
+
+  @include bp(sm) { font-size: .8em; }
 }
 
 .main {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  left: 50%;
+  width: 100%;
+  margin: 0 auto;
+
+  .button {
+    width: auto;
+    margin: 0 0 .5em;
+
+    @include bp(sm) { width: 100%; }
+  }
 }
 
 .printTrigger {
@@ -23,6 +37,13 @@
 
 .nameTrigger {
   border-bottom: 2px solid lighten($black, 20%);
+  display: block;
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  margin: .5em 0;
+
+  @include bp(sm) { width: 100%; }
 
   input {
     background: lighten($black, 20%);

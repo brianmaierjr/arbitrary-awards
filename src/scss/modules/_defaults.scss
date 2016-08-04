@@ -25,6 +25,17 @@ body {
     z-index: -1;
     left: 40px;
   }
+
+  @include bp(sm) {
+    padding: 40px;
+
+    &:before {
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      top: 20px;
+      left: 20px;
+    }
+  }
 }
 
 body,html{
