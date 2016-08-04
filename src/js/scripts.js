@@ -107,7 +107,7 @@
     'Earliest customer at Costco on Saturday morning',
     'Having consistently corny jokes about the American revolution',
     'Most jealous disciple of Jesus Christ',
-    'Most treacherous pirate of the sale bar at Ruby Tuesdays',
+    'Most treacherous pirate of the salad bar at Ruby Tuesdays',
     'Proudest owner of the dog that humps all the other dogs at the dog park',
     'Best made-up superhero that appeals to immigrants',
     'Least scary mall cop',
