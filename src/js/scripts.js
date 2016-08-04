@@ -86,7 +86,7 @@
     'Most aggressive softball player in a work league',
     'Strangest use of a fedora while underwater',
     'Most tempting use of asparagus in a dessert',
-    'Most confusing use of the phrase, win-win situationr',
+    'Most confusing use of the phrase, win-win situation',
     'Worst recap of the movie Space Jamr',
     'Softest poaching of an egg inside an RV',
     'Largest nostril flare due to body odor',
