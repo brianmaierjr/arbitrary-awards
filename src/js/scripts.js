@@ -106,7 +106,6 @@
     'Most hated former Blockbuster employee',
     'Earliest customer at Costco on Saturday morning',
     'Having consistently corny jokes about the American revolution',
-    'Most jealous disciple of Jesus Christ',
     'Most treacherous pirate of the salad bar at Ruby Tuesdays',
     'Proudest owner of the dog that humps all the other dogs at the dog park',
     'Best made-up superhero that appeals to immigrants',
@@ -116,7 +115,21 @@
     'Best build of a snowman without a penis',
     'Most obnoxious Starbucks drink order',
     'Least likely story about meeting Christopher Walken',
-    'Most awkward elevator companion'
+    'Most awkward elevator companion',
+    'Longest shock from an electric dog collar',
+    'Most verbally timid thespian',
+    'Best Phish cover band cover band',
+    'Most underwhelming you got served pose',
+    'Best Mullet photoshop job',
+    'Wittiest email reply using only 4 words',
+    'Most politically incorrect use of the phrase grassy knoll',
+    'Prettiest kankles in your dance troop',
+    'Nerdiest looking posse',
+    'Most emo looking member of a tough guy hardcore band',
+    'Drowsiest member of an all night task force',
+    'Nicest IT person..JK',
+    'Most apathetic ping-pong player',
+    'Least politically correct mattress sales associate in the Commonwealth of Virginia'
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
