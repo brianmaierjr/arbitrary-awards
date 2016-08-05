@@ -13,8 +13,8 @@
 // SCSS MIXINS
 //----------------------------------*/
 
-@import 'mixins/_button.scss';
 @import 'mixins/_breakpoints.scss';
+@import 'mixins/_button.scss';
 
 //----------------------------------*\
 // PARTIALS
@@ -22,10 +22,10 @@
 
 @import 'modules/_defaults.scss';
 @import 'partials/_header.scss';
-@import 'partials/_nav.scss';
 @import 'partials/_footer.scss';
 @import 'partials/_award.scss';
 @import 'partials/_share.scss';
+@import 'partials/_about.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES
@@ -37,8 +37,3 @@
 // Enhancement modules
 @import 'modules/_print.scss';
 
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-@import 'vendor/_external.scss';

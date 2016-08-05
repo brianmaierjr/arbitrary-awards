@@ -380,6 +380,11 @@ th {
     cursor: pointer;
     color: #23202B;
     border-color: #a29c6a; }
+    @media (max-width: 1024px) {
+      .button:hover {
+        background: transparent;
+        border-color: #C9C6A9;
+        color: #C9C6A9; } }
     .button:hover svg {
       fill: white; }
 
@@ -440,9 +445,7 @@ a {
     color: #a29c6a; }
 
 .header svg {
-  fill: #534c65;
-  width: 20px;
-  height: 20px; }
+  fill: #534c65; }
 
 .header h1 {
   font-family: "Work Sans", sans-serif;
@@ -454,26 +457,27 @@ a {
   position: relative;
   margin-top: 0; }
 
-.footer {
-  font-size: .8em; }
-  @media (max-width: 600px) {
-    .footer {
-      text-align: center; } }
+.donate {
+  top: 0;
+  left: 0;
+  border-right: 1px solid #C9C6A9;
+  border-bottom: 1px solid #C9C6A9; }
+  .donate svg {
+    vertical-align: middle;
+    fill: #C9C6A9;
+    width: 12px;
+    height: 12px; }
+
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+    padding-top: 2em; } }
 
 .shareTrigger {
-  color: white;
-  position: absolute;
-  bottom: 60px;
-  left: 60px;
-  text-decoration: none; }
-  .shareTrigger:hover {
-    cursor: pointer;
-    color: #534c65; }
-  @media (max-width: 1024px) {
-    .shareTrigger {
-      position: relative;
-      top: 0;
-      left: 0; } }
+  bottom: 0;
+  left: 0;
+  border-right: 1px solid #C9C6A9;
+  border-top: 1px solid #C9C6A9; }
   .shareTrigger svg {
     vertical-align: middle;
     fill: #C9C6A9; }
@@ -481,14 +485,13 @@ a {
 .copy {
   padding: .2em;
   margin: 2em 0 0;
-  position: absolute;
-  bottom: 60px;
-  right: 60px; }
-  @media (max-width: 1024px) {
-    .copy {
-      position: relative;
-      top: 0;
-      left: 0; } }
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid #C9C6A9;
+  border-top: 1px solid #C9C6A9; }
+
+.print-url {
+  display: none; }
 
 .randomAward {
   text-transform: capitalize;
@@ -498,43 +501,27 @@ a {
   margin-top: 0;
   color: white;
   position: relative;
-  margin-bottom: 5rem; }
-  .randomAward:before {
-    content: "";
-    position: absolute;
-    bottom: -2rem;
-    left: 50%;
-    width: 100px;
-    height: 2px;
-    background: #C9C6A9;
-    display: block;
-    margin-left: -50px; }
+  margin-bottom: 2rem; }
   @media (max-width: 600px) {
     .randomAward {
-      font-size: 2em; } }
+      font-size: 2em;
+      margin-top: .5em; } }
 
 .awardRecipient {
-  margin-top: 3em;
+  margin-top: 2rem;
   font-size: 1em;
   position: relative;
   margin-bottom: 0; }
-  .awardRecipient:before {
-    content: "";
-    position: absolute;
-    top: -2rem;
-    left: 50%;
-    width: 100px;
-    height: 2px;
-    background: #C9C6A9;
-    display: block;
-    margin-left: -50px; }
   @media (max-width: 600px) {
     .awardRecipient {
       font-size: .8em; } }
 
 .main {
   width: 80%;
-  margin: 0 auto; }
+  margin: 2em auto; }
+  @media (max-width: 600px) {
+    .main {
+      margin: 0 auto; } }
   .main .button {
     width: auto;
     margin: 0 .25em; }
@@ -543,14 +530,6 @@ a {
         width: 100%;
         margin: 0 0 .5em; } }
 
-.awardTrigger svg {
-  transition: .5s all ease-in-out; }
-
-.awardTrigger:hover svg {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg); }
-
 .printTrigger {
   border-color: #534c65;
   color: #534c65; }
@@ -558,7 +537,6 @@ a {
     fill: #534c65; }
 
 .nameTrigger {
-  background: #534c65;
   display: block;
   display: inline-block;
   width: auto;
@@ -569,28 +547,58 @@ a {
     .nameTrigger {
       width: 100%; } }
   .nameTrigger input {
-    background: #534c65;
     outline: none;
-    border: none; }
+    border: none;
+    font-size: 16px; }
+    .nameTrigger input:focus {
+      background: #534c65; }
+
+.trigger {
+  background: #23202B;
+  padding: 20px;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  font-size: .8em;
+  cursor: pointer; }
+  .trigger svg {
+    fill: #C9C6A9;
+    vertical-align: middle;
+    display: none; }
+    @media (max-width: 600px) {
+      .trigger svg {
+        width: 20px;
+        height: 20px;
+        display: inline-block; } }
+  @media (max-width: 600px) {
+    .trigger span {
+      display: none; } }
+
+.buttons {
+  margin-top: 2rem; }
 
 #share {
-  background: rgba(35, 32, 43, 0.98);
-  transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms;
-  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms;
+  background: #23202B;
+  transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
+  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
   opacity: 0;
   visibility: visible;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0); }
+          transform: translate3d(0, -100%, 0);
+  overflow-y: scroll; }
   #share.active {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
+            transform: translate3d(0, 0, 0);
+    transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms;
+    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms; }
   #share .share-container {
     position: absolute;
     top: 50%;
@@ -599,10 +607,69 @@ a {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
   #share .js-social-share {
-    font-size: 4em;
+    font-size: 3em;
     display: block;
     text-decoration: none;
     font-family: "Playfair Display", serif; }
+
+#about {
+  background: #23202B;
+  transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
+  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
+  opacity: 0;
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  overflow-y: scroll; }
+  #about.active {
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms;
+    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms; }
+
+.about-container {
+  max-width: 600px;
+  margin: 3em auto;
+  overflow-y: scroll;
+  height: 100vh; }
+  .about-container h2 {
+    margin-top: 1em; }
+  .about-container p {
+    font-size: .8em; }
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 2em;
+      margin: 0; } }
+  .about-container svg {
+    fill: #534c65; }
+
+.aboutTrigger {
+  top: 0;
+  right: 0;
+  border-left: 1px solid #C9C6A9;
+  border-bottom: 1px solid #C9C6A9; }
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2em 0 .5rem;
+  color: #C9C6A9; }
+
+p {
+  margin: 0 0 1rem; }
 
 ::-moz-selection {
   background: #333;
@@ -630,17 +697,13 @@ a {
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important; }
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
   a,
   a:visited {
     text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
   pre,
   blockquote {
     border: 1px solid #999;
@@ -664,11 +727,18 @@ a {
     page-break-after: avoid; }
   .awardTrigger,
   .printTrigger,
-  .shareTrigger {
+  .shareTrigger,
+  .aboutTrigger,
+  .copy,
+  .donate {
     display: none; }
   .randomAward {
-    font-size: 5em;
-    width: 80%;
+    font-size: 3em;
+    width: 90%;
     margin: 0 auto; }
   .nameTrigger {
-    width: auto; } }
+    width: auto; }
+  .randomAward {
+    margin-bottom: 2rem; }
+  .print-url {
+    display: block; } }

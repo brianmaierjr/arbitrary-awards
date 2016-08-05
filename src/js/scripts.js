@@ -87,7 +87,7 @@
     'Strangest use of a fedora while underwater',
     'Most tempting use of asparagus in a dessert',
     'Most confusing use of the phrase, win-win situation',
-    'Worst recap of the movie Space Jamr',
+    'Worst recap of the movie Space Jam',
     'Softest poaching of an egg inside an RV',
     'Largest nostril flare due to body odor',
     'Most recent acquisition of stage prop from Stomp',
@@ -122,6 +122,7 @@
   $('.randomAward').text(rand);
   $('.awardTrigger').click(function(){
     $('.randomAward').text(quotes[Math.floor( Math.random() * quotes.length )]);
+
     return false;
   });
   $('.printTrigger').click(function(){
@@ -133,7 +134,7 @@
   });
 
   // jQuery.editable
-  $('.nameTrigger').editable('click', function(e){
+  $('.nameTrigger').editable('click', function(){
     return false;
   });
 
@@ -143,9 +144,14 @@
     return false;
   });
 
+  // About Trigger
+  $('.aboutTrigger').click(function() {
+    $('#about').toggleClass('active');
+    return false;
+  });
+
+  // Social Sharing
   function windowPopup(url, width, height) {
-    // Calculate the position of the popup so
-    // it’s centered on the screen.
     var left = (screen.width / 2) - (width / 2),
         top = (screen.height / 2) - (height / 2);
 
@@ -158,9 +164,9 @@
 
   $('.js-social-share').on('click', function(e) {
     e.preventDefault();
-
     windowPopup($(this).attr('href'), 500, 300);
   });
 
 
 })(jQuery, window, document);
+

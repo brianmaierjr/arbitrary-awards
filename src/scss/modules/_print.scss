@@ -5,20 +5,14 @@
     box-shadow: none !important;
     text-shadow: none !important;
   }
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
   a,
   a:visited {
     text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  .ir a:after,
-   a[href^="javascript:"]:after,
-   a[href^="#"]:after {
-    content: "";
   }
   pre,
   blockquote {
@@ -51,13 +45,16 @@
 
   .awardTrigger,
   .printTrigger,
-  .shareTrigger {
+  .shareTrigger,
+  .aboutTrigger,
+  .copy,
+  .donate {
     display: none;
   }
 
   .randomAward {
-    font-size: 5em;
-    width: 80%;
+    font-size: 3em;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -65,4 +62,11 @@
     width: auto;
   }
 
+  .randomAward {
+    margin-bottom: 2rem;
+  }
+
+  .print-url {
+    display: block;
+  }
 }

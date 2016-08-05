@@ -1,28 +1,16 @@
 .footer {
-  font-size: .8em;
 
   @include bp(sm) {
     text-align: center;
+    padding-top: 2em;
   }
 }
 
 .shareTrigger {
-  color: white;
-  position: absolute;
-  bottom: 60px;
-  left: 60px;
-  text-decoration: none;
-
-  &:hover {
-    cursor: pointer;
-    color: lighten($black, 20%);
-  }
-
-  @include bp(med) {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+  bottom: 0;
+  left: 0;
+  border-right: 1px solid $tan;
+  border-top: 1px solid $tan;
 
   svg {
     vertical-align: middle;
@@ -33,13 +21,12 @@
 .copy {
   padding: .2em;
   margin: 2em 0 0;;
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid $tan;
+  border-top: 1px solid $tan;
+}
 
-  @include bp(med) {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+.print-url {
+  display: none;
 }

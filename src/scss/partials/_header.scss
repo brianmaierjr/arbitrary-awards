@@ -2,8 +2,6 @@
 
   svg {
     fill: lighten($black, 20%);
-    width: 20px;
-    height: 20px;
   }
 
   h1 {
@@ -15,5 +13,19 @@
     letter-spacing: 2px;
     position: relative;
     margin-top: 0;
+  }
+}
+
+.donate {
+  top: 0;
+  left: 0;
+  border-right: 1px solid $tan;
+  border-bottom: 1px solid $tan;
+
+  svg {
+    vertical-align: middle;
+    fill: $tan;
+    width: 12px;
+    height: 12px;
   }
 }
