@@ -119,6 +119,12 @@
     'Drowsiest member of an all night task force',
     'Nicest IT person..JK',
     'Most apathetic ping-pong player',
+    'angriest secret shopper',
+    'curling champion who’s most resistant to change',
+    'tallest lumberjack with a smart car',
+    'being the fifth dentist who won’t recommend products',
+    'holder of the most unofficial world records',
+    'least engaged audience member at a TED talk',
     'Least politically correct mattress sales associate in the Commonwealth of Virginia',
     'Most likely to eat a hamburger with ICP'
   ];
