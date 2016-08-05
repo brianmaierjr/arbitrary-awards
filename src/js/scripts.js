@@ -7,7 +7,6 @@
     'best website in a category that is a subcategory of a random industry',
     'most clever logo containing an animal with 3-4 legs',
     'worst in-law to a snow leopard',
-    'first runner-up for most staples in a packet on the third floor',
     'most audible treble in the church choir',
     'baldest tires during the winter',
     'sexiest stare into the eyes of a lover',
@@ -143,7 +142,7 @@
     window.print();
     return false;
   });
-  $('.tweet').click(function(){
+  $(.tweet').click(function(){
     $('.tweet a').attr('href','https://twitter.com/intent/tweet?text='+encodeURIComponent(rand));
   });
 
