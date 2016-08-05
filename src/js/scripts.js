@@ -126,7 +126,11 @@
     'holder of the most unofficial world records',
     'least engaged audience member at a TED talk',
     'Least politically correct mattress sales associate in the Commonwealth of Virginia',
-    'Most likely to eat a hamburger with ICP'
+    'Most likely to eat a hamburger with ICP',
+    'best use of a waterpik for self defense',
+    'most accurate portrayal of the wind',
+    'manliest use of a feminine product for the sake of fine art'
+
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
