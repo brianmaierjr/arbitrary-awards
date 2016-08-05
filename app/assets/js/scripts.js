@@ -90,7 +90,7 @@
     'Worst recap of the movie Space Jam',
     'Softest poaching of an egg inside an RV',
     'Largest nostril flare due to body odor',
-    'Most recent acquisition of stage prop from Stomp',
+    'Most recent acquisition of a stage prop from Stomp',
     'Least ambitious boy band member',
     'Least ironic mustache wearer',
     'Best explanation of how the internet works',
