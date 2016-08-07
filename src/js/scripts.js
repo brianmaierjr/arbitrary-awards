@@ -139,8 +139,12 @@
     'Most likely to eat a hamburger with ICP',
     'best use of a waterpik for self defense',
     'most accurate portrayal of the wind',
-    'manliest use of a feminine product for the sake of fine art'
-
+    'manliest use of a feminine product for the sake of fine art',
+    'Most raw hot dogs consumed while watching WWE Monday Night Raw uninronically',
+    'Weakest cry to a Bachelor rose ceremony',
+    'Blondest bangs at a Bette Middler benefit',
+    'Most non life threatening sparkler related injuries',
+    'least drakonian views about putting ketchup on a hotdog'
   ];
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
