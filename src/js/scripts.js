@@ -136,7 +136,6 @@
     '4th most self deprecating mathematician from South America',
     'Most litigious Astrophysicist',
     'Cat behavioral specialist with the most outstanding parking tickets',
-    'Creator of the tallest jenga tower in the 2019',
     'Most likely to eat a hamburger with ICP',
     'best use of a waterpik for self defense',
     'most accurate portrayal of the wind',
