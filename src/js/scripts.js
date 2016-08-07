@@ -108,7 +108,7 @@
     'Most awkward elevator companion',
     'Longest shock from an electric dog collar',
     'Most verbally timid thespian',
-    'Best Phish cover band cover band',
+    'Founding member of the Best Phish cover band cover band',
     'Most underwhelming you got served pose',
     'Best Mullet photoshop job',
     'Wittiest email reply using only 4 words',
