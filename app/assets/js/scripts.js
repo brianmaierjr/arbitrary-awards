@@ -126,6 +126,9 @@
     'Drowsiest member of an all night task force',
     'Nicest IT person..JK',
     'Most apathetic ping-pong player',
+    'Olympic Athlete with the most creative use of kinesio tape',
+    'Sexiest Olympic broadcaster',
+    'World’s worst FIFA player',
     'angriest secret shopper',
     'curling champion who’s most resistant to change',
     'tallest lumberjack with a smart car',
@@ -133,24 +136,36 @@
     'holder of the most unofficial world records',
     'least engaged audience member at a TED talk',
     'Least politically correct mattress sales associate in the Commonwealth of Virginia',
+    'Worst parallel parker in the European Union',
+    'Manchester United supporter with the most unopened DVDs',
+    'Owner of the most monochromatic v-neck t-shirts',
+    'World’s biggest Dr. Quinn, Medicine Woman fan',
+    'Loudest Barrister in The United Kingdom',
+    '4th most self deprecating mathematician from South America',
+    'Most litigious Astrophysicist',
+    'Cat behavioral specialist with the most outstanding parking tickets',
     'Most likely to eat a hamburger with ICP',
     'best use of a waterpik for self defense',
     'most accurate portrayal of the wind',
-    'manliest use of a feminine product for the sake of fine art'
-
+    'manliest use of a feminine product for the sake of fine art',
+    'Most raw hot dogs consumed while watching WWE Monday Night Raw uninronically',
+    'Weakest cry to a Bachelor rose ceremony',
+    'Blondest bangs at a Bette Middler benefit',
+    'Most non life threatening sparkler related injuries',
+    'least drakonian views about putting ketchup on a hotdog'
   ];
+
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
   $('.awardTrigger').click(function(){
     $('.randomAward').text(quotes[Math.floor( Math.random() * quotes.length )]);
-
     return false;
   });
   $('.printTrigger').click(function(){
     window.print();
     return false;
   });
-  $(.tweet').click(function(){
+  $('.tweet').click(function(){
     $('.tweet a').attr('href','https://twitter.com/intent/tweet?text='+encodeURIComponent(rand));
   });
 

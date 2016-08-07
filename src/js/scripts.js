@@ -146,18 +146,18 @@
     'Most non life threatening sparkler related injuries',
     'least drakonian views about putting ketchup on a hotdog'
   ];
+
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   $('.randomAward').text(rand);
   $('.awardTrigger').click(function(){
     $('.randomAward').text(quotes[Math.floor( Math.random() * quotes.length )]);
-
     return false;
   });
   $('.printTrigger').click(function(){
     window.print();
     return false;
   });
-  $(.tweet').click(function(){
+  $('.tweet').click(function(){
     $('.tweet a').attr('href','https://twitter.com/intent/tweet?text='+encodeURIComponent(rand));
   });
 
