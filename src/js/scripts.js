@@ -113,7 +113,7 @@
     'Best Mullet photoshop job',
     'Wittiest email reply using only 4 words',
     'Most politically incorrect use of the phrase grassy knoll',
-    'Prettiest kankles in your dance troop',
+    'Prettiest cankles in your dance troop',
     'Most emo looking member of a tough guy hardcore band',
     'Drowsiest member of an all night task force',
     'Nicest IT person..JK',
