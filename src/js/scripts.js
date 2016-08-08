@@ -147,7 +147,11 @@
     'least drakonian views about putting ketchup on a hotdog',
     'Longest lurker on reddit without an account',
     'Best Gandolph impression on a ski slope',
-    'Calmest Ford festiva driver'
+    'Calmest Ford festiva driver',
+    'Best impression of a mark walhberg impression',
+    'Best amateur crooner with a loose leaf tea fetish',
+    'Least assists in the local rec basketball league',
+    'Biggest d-bag on an airplane. I’m looking at you, Chad.'
   ];
 
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
