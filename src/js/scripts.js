@@ -144,7 +144,7 @@
     'Weakest cry to a Bachelor rose ceremony',
     'Blondest bangs at a Bette Middler benefit',
     'Most non life threatening sparkler related injuries',
-    'least drakonian views about putting ketchup on a hotdog',
+    'least draconian views about putting ketchup on a hotdog',
     'Longest lurker on reddit without an account',
     'Best Gandolph impression on a ski slope',
     'Calmest Ford festiva driver',
