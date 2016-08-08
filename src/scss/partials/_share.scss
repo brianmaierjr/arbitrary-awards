@@ -10,6 +10,7 @@
   left: 0;
   transform: translate3d(0,-100%,0);
   overflow-y: scroll;
+  z-index: 9999;
 
   &.active {
     opacity: 1;
