@@ -210,6 +210,10 @@
     windowPopup($(this).attr('href'), 500, 300);
   });
 
+    .on(event.keyCode === 13){
+      $('.awardTrigger').click();
+    }
+
 
 })(jQuery, window, document);
 

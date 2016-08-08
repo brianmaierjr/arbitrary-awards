@@ -202,6 +202,5 @@
     windowPopup($(this).attr('href'), 500, 300);
   });
 
-
 })(jQuery, window, document);
 
