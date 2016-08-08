@@ -38,7 +38,7 @@
     'sexiest worker in the Fast Food court at the mall',
     'Sassiest Horseshoe Crab Halloween Outfit',
     'Best Me Without You Karaoke rendition while wearing a Stussy beanie',
-    'Most convincing Nicholas Cage body double',
+    'Most convincing Nicolas Cage body double',
     'Best use of Tabasco Sauce for purposes other than eating or snorting',
     'Most underwhelming caption on a viral video',
     'Most mediocre webinar about the benefits of Lavender',
