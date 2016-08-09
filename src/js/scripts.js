@@ -147,6 +147,7 @@
     'least drakonian views about putting ketchup on a hotdog',
     'Longest lurker on reddit without an account',
     'Best Gandolph impression on a ski slope',
+    'Highest Comment Karma in Reddit History',
     'Calmest Ford festiva driver',
     'Best impression of a mark walhberg impression',
     'Best amateur crooner with a loose leaf tea fetish',
