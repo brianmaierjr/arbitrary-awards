@@ -139,6 +139,8 @@
     'Most likely to eat a hamburger with ICP',
     'best use of a waterpik for self defense',
     'most accurate portrayal of the wind',
+    'Most complimentary trash talker',
+    'Best Touchdown celebration involving a prop',
     'manliest use of a feminine product for the sake of fine art',
     'Most raw hot dogs consumed while watching WWE Monday Night Raw uninronically',
     'Weakest cry to a Bachelor rose ceremony',
