@@ -149,6 +149,8 @@
     'least draconian views about putting ketchup on a hotdog',
     'Longest lurker on reddit without an account',
     'Best Gandolph impression on a ski slope',
+    'Most likely to ruin a cinematic experience',
+    'drunkest audience member at a steely dan concert',
     'Highest Comment Karma in Reddit History',
     'Calmest Ford festiva driver',
     'Best hair flip in a made for tv movie',
