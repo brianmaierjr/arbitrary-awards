@@ -154,6 +154,7 @@
     'Highest Comment Karma in Reddit History',
     'Calmest Ford festiva driver',
     'Best hair flip in a made for tv movie',
+    'weirdest office power play involving soft rock music',
     'Best impression of a mark walhberg impression',
     'Best amateur crooner with a loose leaf tea fetish',
     'Least assists in the local rec basketball league',
