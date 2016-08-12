@@ -151,6 +151,7 @@
     'Best Gandolph impression on a ski slope',
     'Best interpretive dance of welcome to the jungle',
     'Softest yeller',
+    'Sickest references',
     'Most likely to ruin a cinematic experience',
     'drunkest audience member at a concert',
     'Highest Comment Karma in Reddit History',
