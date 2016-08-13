@@ -162,6 +162,9 @@
     'weirdest office power play involving soft rock music',
     'Best impression of a mark walhberg impression',
     'Best amateur crooner with a loose leaf tea fetish',
+    'Coworker with the most annoying laugh',
+    'Cartographer with the worst sense of direction',
+    'Train conductor with the most flamboyant horn pull',
     'Least assists in the local rec basketball league',
     'Biggest d-bag on an airplane. I’m looking at you, Chad.'
   ];
