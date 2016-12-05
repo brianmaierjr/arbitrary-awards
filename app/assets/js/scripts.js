@@ -166,6 +166,8 @@
     'Calmest Ford festiva driver',
     'most brutal intramural flag football player',
     'Best hair flip in a made for tv movie',
+    'Slam Poet with greatest stage presence',
+    'Greatest misunderstanding caused by ketchup',
     'worst job at covering up cigarette smell in a car by using air fresheners',
     'weirdest office power play involving soft rock music',
     'Best impression of a mark walhberg impression',
