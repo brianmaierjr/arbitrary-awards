@@ -174,7 +174,8 @@
     'Cartographer with the worst sense of direction',
     'Train conductor with the most flamboyant horn pull',
     'Least assists in the local rec basketball league',
-    'Biggest d-bag on an airplane. I’m looking at you, Chad.'
+    'Biggest d-bag on an airplane. I’m looking at you, Chad.',
+    'Bounty Hunter with the deepest knowledge of PHP'
   ];
 
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
