@@ -4,7 +4,7 @@
  * https://brianmaierjr.github.io/arbitrary-awards
  * @author Brian Maier Jr.
  * @version 1.0.0
- * Copyright 2016. MIT licensed.
+ * Copyright 2017. MIT licensed.
  */
 (function ($, window, document, undefined) {
 

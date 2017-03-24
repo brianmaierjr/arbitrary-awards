@@ -444,6 +444,15 @@ a {
   a:hover {
     color: #a29c6a; }
 
+::-webkit-scrollbar {
+  width: .5em; }
+
+::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9c6a9; }
+
 .header svg {
   fill: #534c65; }
 
