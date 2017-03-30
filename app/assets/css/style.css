@@ -763,8 +763,9 @@ p {
   .shareTrigger,
   .aboutTrigger,
   .copy,
-  .donate {
-    display: none; }
+  .donate,
+  .adsbygoogle {
+    display: none !important; }
   .randomAward {
     font-size: 3em;
     width: 90%;

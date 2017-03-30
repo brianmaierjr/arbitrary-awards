@@ -48,8 +48,9 @@
   .shareTrigger,
   .aboutTrigger,
   .copy,
-  .donate {
-    display: none;
+  .donate,
+  .adsbygoogle {
+    display: none !important;
   }
 
   .randomAward {
