@@ -189,7 +189,7 @@
     'biggest board game cheater',
     'world’s hottest ice fisherman',
     'worst clapper in a church choir',
-    'biggest collector of PBR memorabilia a non-ironic way',
+    'biggest collector of PBR memorabilia in a non-ironic way',
     'Most obnoxious back-seat driver',
     'Most confused extra in a WWII themed movie',
     'Narcissist with the greatest self-awareness',
