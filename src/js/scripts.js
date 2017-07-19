@@ -184,6 +184,16 @@
     'Train conductor with the most flamboyant horn pull',
     'Least assists in the local rec basketball league',
     'Biggest d-bag on an airplane',
+    'most ungracious monopoly winner',
+    'smallest man to come out of the biggest closet',
+    'biggest board game cheater',
+    'world’s hottest ice fisherman',
+    'worst clapper in a church choir',
+    'biggest collector of PBR memorabilia a non-ironic way',
+    'Most obnoxious back-seat driver',
+    'Most confused extra in a WWII themed movie',
+    'Narcissist with the greatest self-awareness',
+    'substitute teacher with the best negotiating skills',
     'Bounty Hunter with the deepest knowledge of PHP'
   ];
 
