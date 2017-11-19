@@ -403,18 +403,15 @@ body {
   text-align: center;
   position: relative;
   padding: 80px;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
   body .header,
   body .main,
   body .footer {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+        flex: 1;
     width: 100%; }
   body:before {
     height: calc(100% - 80px);
@@ -588,9 +585,7 @@ a {
 
 #share {
   background: #23202B;
-  transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
   transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
-  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
   opacity: 0;
   visibility: visible;
   width: 100vw;
@@ -598,24 +593,19 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
   overflow-y: scroll;
   z-index: 9999; }
   #share.active {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms;
-    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
-    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms; }
+    transform: translate3d(0, 0, 0);
+    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1); }
   #share .share-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
   #share .js-social-share {
     font-size: 3em;
     display: block;
@@ -628,9 +618,7 @@ a {
 
 #about {
   background: #23202B;
-  transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
   transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
-  transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms, -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms;
   opacity: 0;
   visibility: visible;
   width: 100vw;
@@ -638,19 +626,15 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
   overflow-y: scroll;
   z-index: 9999; }
   #about.active {
     overflow: visible;
     visibility: visible;
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms;
-    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
-    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms; }
+    transform: translate3d(0, 0, 0);
+    transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 .about-container {
   max-width: 600px;
