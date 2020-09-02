@@ -194,7 +194,12 @@
     'Most confused extra in a WWII themed movie',
     'Narcissist with the greatest self-awareness',
     'substitute teacher with the best negotiating skills',
-    'Bounty Hunter with the deepest knowledge of PHP'
+    'Bounty Hunter with the deepest knowledge of PHP',
+    'Steamiest on screen kiss with a non human species',
+    'Antifa member with the largest collection of Beanie Babies',
+    'Most Coronas drank while having the Corona Virus',
+    'Earliest lawnmower start by a dad on Saturday morning',
+    'Worst website using an award-winning Squarespace template'
   ];
 
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
