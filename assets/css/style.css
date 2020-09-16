@@ -674,11 +674,6 @@ h3 {
 p {
   margin: 0 0 1rem; }
 
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
 ::selection {
   background: #333;
   color: #fff;
