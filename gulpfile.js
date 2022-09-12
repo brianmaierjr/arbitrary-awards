@@ -1,68 +1,43 @@
-var gulp = require("gulp"),
-  sass = require("gulp-sass"),
-  browserSync = require("browser-sync"),
-  autoprefixer = require("gulp-autoprefixer"),
-  uglify = require("gulp-uglify"),
-  jshint = require("gulp-jshint"),
-  header = require("gulp-header"),
-  rename = require("gulp-rename"),
-  cssnano = require("gulp-cssnano"),
-  package = require("./package.json");
+const gulp = require('gulp');
+const { series } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const csso = require('gulp-csso');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
 
-var banner = [
-  "/*!\n" +
-    " * <%= package.name %>\n" +
-    " * <%= package.title %>\n" +
-    " * <%= package.url %>\n" +
-    " * @author <%= package.author %>\n" +
-    " * @version <%= package.version %>\n" +
-    " * Copyright " +
-    new Date().getFullYear() +
-    ". <%= package.license %> licensed.\n" +
-    " */",
-  "\n",
-].join("");
+// compile scss into css
+function style() {
+  return gulp.src('src/scss/style.scss') //gets all files ending with .scss in src/scss
+    .pipe(sass().on('error', sass.logError))
+    .pipe(csso())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('app/assets/css'))
+    .pipe(browserSync.stream());
+}
 
-gulp.task("css", function () {
-  return gulp
-    .src("src/scss/style.scss")
-    .pipe(sass({ errLogToConsole: true }))
-    .pipe(autoprefixer("last 4 version"))
-    .pipe(gulp.dest("app/assets/css"))
-    .pipe(cssnano())
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(header(banner, { package: package }))
-    .pipe(gulp.dest("app/assets/css"))
-    .pipe(browserSync.reload({ stream: true }));
-});
-
-gulp.task("js", function () {
-  gulp
-    .src("src/js/scripts.js")
-    .pipe(jshint(".jshintrc"))
-    .pipe(jshint.reporter("default"))
-    .pipe(header(banner, { package: package }))
-    .pipe(gulp.dest("app/assets/js"))
+// minify js and add to dist folder
+function minifyjs() {
+  return gulp.src('src/js/scripts.js')
     .pipe(uglify())
-    .pipe(header(banner, { package: package }))
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("app/assets/js"))
-    .pipe(browserSync.reload({ stream: true, once: true }));
-});
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('app/assets/js'))
+    .pipe(browserSync.stream());
+}
 
-gulp.task("browser-sync", function () {
-  browserSync.init(null, {
+// watch assets and generate
+function watch() {
+  browserSync.init({
     server: {
-      baseDir: "app",
-    },
+      baseDir: "./app",
+      index: "/index.html"
+    }
   });
-});
-gulp.task("bs-reload", function () {
-  browserSync.reload();
-});
+  gulp.watch('src/scss/**/*.scss', style);
+  gulp.watch('src/js/*.js', minifyjs);
+}
 
-gulp.task("default", ["css", "js", "browser-sync"], function () {
-  gulp.watch("src/scss/*/*.scss", ["css"]);
-  gulp.watch("src/js/*.js", ["js"]);
-  gulp.watch("app/*.html", ["bs-reload"]);
-});
+exports.style = style;
+exports.minifyjs = minifyjs;
+exports.production = series(style, minifyjs);
+exports.default = watch; 

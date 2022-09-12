@@ -3,9 +3,11 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 html {
   font-size: 100%;
 }
+
 body {
   background: $black;
   font: 400 1em/1.6 $sans-serif;
@@ -47,19 +49,28 @@ body {
   }
 }
 
-body,html{
-	min-height: 100vh;
-	overflow-x: hidden;
+body,
+html {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
- color: $tan;
+  color: $tan;
 
   &:hover {
     color: darken($tan, 20%);
   }
 }
 
-::-webkit-scrollbar { width: .5em; }
-::-webkit-scrollbar-track { background-color: transparent; }
-::-webkit-scrollbar-thumb { background-color: #c9c6a9; }
+::-webkit-scrollbar {
+  width: .5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9c6a9;
+}
